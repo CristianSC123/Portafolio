@@ -25,10 +25,17 @@ SECRET_KEY = 'django-insecure-w#jt3i)7j-f3*lc=8-5&xj969itd_bk6!q-&aoymtez07)ym*n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
+
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+
+
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'https://portafoliocriss.up.railway.app/']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
