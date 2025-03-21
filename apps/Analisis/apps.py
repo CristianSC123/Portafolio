@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
-class InformacionConfig(AppConfig):
+
+class AnalisisConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.Informacion'
+    name = 'apps.Analisis'
